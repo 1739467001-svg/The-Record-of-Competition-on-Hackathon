@@ -21,7 +21,7 @@
 
 | 步 | 谁做 | 做什么 | 落在哪 |
 |---|---|---|---|
-| 1 | Claude | 读懂赛题：赛道、评分标准、时间、交付物、隐性偏好 | 赛事记录草稿 |
+| 1 | Claude | **读信号**：主办方到底想要什么？（见 [信号分析法](playbook/00-信号分析法.md)）+ 拆赛题 | 赛事记录草稿 |
 | 2 | Claude | 对照 [能力图谱](profile/capability-map.md) 盘弹药，用[选型决策法](playbook/01-选型决策法.md)给 **2–3 个候选方向 + 评分卡** | 同上 |
 | 3 | **你** | 拍板选一个（或否掉重来） | — |
 | 4 | Claude + 你 | 出项目规划：功能边界、技术选型、时间线、分工 | 同上 |
@@ -36,6 +36,7 @@
 | [`CLAUDE.md`](CLAUDE.md) | Claude 的常驻作战手册 —— 收到比赛后的标准动作、约定、红线 |
 | [`profile/capability-map.md`](profile/capability-map.md) | **能力图谱 & 弹药库** —— 我能打什么、手上有哪些可换皮的现成作品 |
 | [`profile/track-record.md`](profile/track-record.md) | **战绩表** —— 打过的每一场、什么身份、什么结果 |
+| [`playbook/00-信号分析法.md`](playbook/00-信号分析法.md) | **第一步** —— 主办方到底想要什么？读懂了再谈方向 |
 | [`playbook/01-选型决策法.md`](playbook/01-选型决策法.md) | **核心** —— 拿到一个赛题，怎么在 30 分钟内定出"最适合我"的方向 |
 | [`playbook/02-参赛SOP.md`](playbook/02-参赛SOP.md) | 从报名到路演的全流程清单（含赛前 48 小时倒计时） |
 | [`competitions/`](competitions/) | 每一场比赛一份完整记录 |
