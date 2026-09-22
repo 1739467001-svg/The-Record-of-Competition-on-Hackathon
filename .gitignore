@@ -1,0 +1,7 @@
+# 由 Markdown 生成的提交件（源文件在 competitions/ 里，PDF 不入库）
+*.pdf
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp
