@@ -2,7 +2,7 @@
 
 > 基于对 **130 个 GitHub 仓库**的全量扫描 + 个人档案整理。
 > 这份文件回答两个问题：**我能打什么？** 和 **我手上有什么可以直接换皮上场的东西？**
-> 最后更新：2026-09-18
+> 最后更新：2026-11-06（吸收 2026.11 版个人介绍与作品集）
 
 ---
 
@@ -13,6 +13,9 @@
 这不是谦虚也不是吹牛，是扫描完 130 个仓库后的客观结论。
 市面上 Demo 满地都是，但**同时具备「工程交付 + 视觉表现 + 赛事组织 + 真实教学」四项**的人极其稀缺。
 这四项的交集，就是选型时必须站住的地方。
+
+> **2026.11 作品集的自我定位**：AI 应用开发者 · 数字化课堂探索 · 青少年 AI 黑客松比赛。
+> 作品集的口号是"别人写『我参与过』，我给一个能点开的地址"——**每件作品都已部署上线、可直接打开**，这本身就是差异化。
 
 ---
 
@@ -30,7 +33,8 @@
 | 4 | Zustand / Next.js | 状态 / 全栈 |
 | 2 | Vue / ECharts / OpenAI SDK | 次要 |
 
-其他出现过：NestJS（督导系统后端）、PostgreSQL + Drizzle ORM、Prisma、GSAP、WebXR、
+其他出现过：NestJS / Node.js + MySQL 8.0 + Nginx + PM2（督导系统生产环境）、PostgreSQL + Drizzle ORM、Prisma、GSAP、WebXR、
+**3DGS（3D 高斯泼溅）预览**、**OpenStreetMap 大场景重建**、**语音转写 + 脱敏**、
 faster-whisper（本地语音）、Docker、Nginx。
 
 ### 三个反复出现的工程习惯（这是护城河，不是巧合）
@@ -49,15 +53,16 @@ faster-whisper（本地语音）、Docker、Nginx。
 > **换皮 = 场景和数据换掉，3D 引擎层、交互层、UI 框架全部复用。**
 > 这是把一场比赛从"72 小时从零做"压缩到"12 小时做出精品"的关键。
 
-### 🏗️ A 军火库 · 3D 数字孪生（最厚的一层，11 个可跑场景）
+### 🏗️ A 军火库 · 3D 数字孪生（最厚的一层，12 个可跑场景）
 
 | 作品 | 仓库 | 线上 | 可换皮成什么 |
 |---|---|---|---|
 | OC Cargo Claw 智慧港口 | `cargo-claw` | [演示](https://cargo-claw.vercel.app) | 园区 / 厂区 / 物流枢纽 / 仓储 |
-| 智港数字员工 SmartPort | `Smart-Port` | — | **孪生 + 5 名多智能体协同班组**的完整叙事 |
+| 智港数字员工 SmartPort | `Smart-Port` | [演示](https://smart-port-omega.vercel.app/) | **孪生 + 5 名多智能体协同班组**（单证、配载、安全、调度、执行彼此协商、逐级审批）的完整叙事 |
 | AEROTWIN 天府机场 | `aerotwin-tfu` | [演示](http://aerotwin-tfu.vercel.app/) | 交通枢纽 / **调度算法 A/B 影子仿真** |
 | DeepBlue Rig 海上油田 | `deepblue-rig` | [演示](https://deepblue-rig.vercel.app/) | 能源 / 海洋 / 危化 / 电影级渲染 |
-| CampusTwin 校园孪生 | `Campus-Twin` `CampusTwin` `ZJGSU-Kimi-Work` | — | 教育数字化 / 校园服务 / 政务大厅 |
+| 商大元境 CampusTwin X | `Campus-Twin` `CampusTwin` `ZJGSU-Kimi-Work` | 校园内网演示 | 基于 **OpenStreetMap** 重建 422 栋楼宇的校区三维孪生，底部指令栏**一句话指挥校园** → 教育数字化 / 城市服务 / 政务大厅 |
+| 开图 Unfold · 3D 旅行助手 | — | 已部署 | 全景影像工作台 + **3DGS 预览** + 行程 Agent + 券核销 → 文旅 / 景区 / 酒店 / 本地生活（Insta360 Bold Maker 赛道原型） |
 | 会议室预约虾 3D | `ZJGSU` | — | 空间资源调度 |
 | VR 太阳系漫游 | `Virtual-Universe` | [演示](https://virtual-universe-eight.vercel.app/) | 科普 / 教育 / **WebXR 头显** |
 | 虚拟看房 · 样板间 | `Virtual-Reality` | [演示](https://virtual-reality-mocha.vercel.app/) | 地产 / 室内设计 / VR 漫游 |
@@ -75,7 +80,8 @@ faster-whisper（本地语音）、Docker、Nginx。
 | 会议室预约虾（Skills 赛完整提交包） | `meeting-room-shrimp` | **有现成的比赛提交包结构，直接照抄** |
 | 声纹挚友 SoulVoice | `soulvoice` | 长期记忆 + 好感度成长 + 声音随亲密度渐变 · 商汤二等奖 |
 | 自适应毕设共创专家团 | `c-tongji` | 多 Agent 协同 · 同济 × 腾讯云 SKILL 赛 |
-| 研究生督导管理系统 | `zjgsu-supervisor-v3` `supervision2.0` | **真实在线上跑的系统**（React + NestJS + AI Chat + 图表），213 文件 |
+| **AI 病历智能体 DrCopilot** ★ 新 | — | **与中国科学院杭州医学研究所课题组合作**，县级医院住院病历场景：语音口述 → 本地转写 → 脱敏 → 多智能体生成入院记录 / 首次病程 → **医生确认才归档**；法定时限质控、全程留痕可审计；**已迭代至 V2**，下一步自建 ASR |
+| 研究生督导管理系统 | `zjgsu-supervisor-v3` `supervision2.0` | **真实在线上跑的系统**：覆盖 27 个学院、727 位授课教师、2117 门课程，四类角色协作，已沉淀一整年业务数据（Node.js + MySQL + Nginx + PM2 + 阿里云） |
 | AI 创业生成器 | `Al-Startup-Generator` | — |
 | LangChain / LangGraph 学习体系 | `Astudio_langchain-langgraph` | **7423 个文件**的图解知识库，技术深度背书 |
 | 数字员工方法论 | — | "卖结果不卖技术""虾 vs 马"的产品化打法 |
@@ -116,7 +122,8 @@ faster-whisper（本地语音）、Docker、Nginx。
 |---|---|---|
 | audio-to-md | `audio-to-md` | faster-whisper 本地转写，99 语言、离线免费 |
 | 双语字幕 / 自动分发 | `bilingual-subtitles` `auto-promo` | 浏览器自动化多平台分发 |
-| 时光机 Time Machine | `Time-Machine` | 拍照 → AI 推演 10–60 年后的自己 |
+| 人生时光机 Time Machine | `Time-Machine` | 拍照 → AI 推演 NOW 到 +60 年七个时间切片；**隐私最小化设计**（同意门 + 不落盘、不入库、不写日志） |
+| CJY 小票机 | — | 关于"我"的问答打印成小票：**RAG + 来源溯源**（来源清单、流水号、条形码） |
 | 会员管理系统 | `Member-management-platform` | Next.js 16 + React 19 + PostgreSQL + Drizzle，**真全栈** |
 | 鼎味轩中式菜单系统 | `Food-Scroll` | 全栈 + 认证 + 管理后台 |
 | 个人作品集站 ×6 版 | `CJY-Web-Page*` `CJY-Codex` `CJY-Claude` | 多种设计风格（新野兽派 / 瑞士 Editorial / 墨与金） |
@@ -157,7 +164,11 @@ faster-whisper（本地语音）、Docker、Nginx。
 
 ## 六、非技术资源（常被自己忘掉，但评委很吃）
 
-- **真实用户触点**：7–13 岁学员、家长群体、研究生、企业 HR、宗教双通班学员、高校老师
+- **学术线（2026.11 新）**：**2027.09 博士入学**，未来导师课题组在中国科学院杭州医学研究所，且已有合作项目（DrCopilot）
+  → **医疗健康类赛题不再是零弹药**：有真实医院场景、真实合作方、真实迭代版本
+- **带队教练战绩（2026.11 新）**：带青少年队拿过 2 个奖（深圳微光青少年黑客松「微光共振奖」，67 支队前 10；杭州 AGENT BUILDER HACKATHON 三等奖，带 4 位初中生）；
+  还当过北京 MoonStone 初中生黑客松的驻场嘉宾 + 评委 → **"带孩子打黑客松"已有可验证的成绩**
+- **真实用户触点**：7–13 岁学员、家长群体、研究生、企业 HR、宗教双通班学员、高校老师、医院临床医生
 - **真实落地系统**：督导管理系统（研究生院在用）、会议室预约（学院已跑通）
 - **社群**：「冰山两角 / HH studio」群 137 人、876 位好友、两支志愿者小分队（杭州 / 上海）
 - **师长网络**：导师诸葛斌、多位高校老师、副校长级资源
